@@ -1,0 +1,189 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "email": "admin@example.com",
+      "password": "password123",
+      "name": "Alex Morgan",
+      "role": "admin",
+      "avatar": ""
+    },
+    {
+      "id": "user-2",
+      "email": "dev@example.com",
+      "password": "password123",
+      "name": "Sam Wilson",
+      "role": "developer",
+      "avatar": ""
+    },
+    {
+      "id": "user-3",
+      "email": "designer@example.com",
+      "password": "password123",
+      "name": "Jordan Lee",
+      "role": "designer",
+      "avatar": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": "Website Redesign",
+      "description": "Complete overhaul of the company website with modern design and improved UX",
+      "ownerId": "user-1",
+      "members": ["user-1", "user-2", "user-3"],
+      "createdAt": "2025-01-15T10:00:00Z",
+      "updatedAt": "2025-02-01T14:30:00Z"
+    },
+    {
+      "id": "proj-2",
+      "name": "Mobile App MVP",
+      "description": "Develop the minimum viable product for the mobile application",
+      "ownerId": "user-1",
+      "members": ["user-1", "user-2"],
+      "createdAt": "2025-01-20T09:00:00Z",
+      "updatedAt": "2025-02-05T11:00:00Z"
+    },
+    {
+      "id": "proj-3",
+      "name": "API Integration",
+      "description": "Integrate third-party APIs for payment processing and analytics",
+      "ownerId": "user-2",
+      "members": ["user-2", "user-3"],
+      "createdAt": "2025-02-01T08:00:00Z",
+      "updatedAt": "2025-02-06T16:45:00Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "title": "Design homepage mockup",
+      "description": "Create wireframes and high-fidelity mockups for the new homepage layout",
+      "status": "done",
+      "priority": "high",
+      "assigneeId": "user-3",
+      "projectId": "proj-1",
+      "dueDate": "2025-02-10T00:00:00Z",
+      "tags": ["design", "ui"],
+      "createdAt": "2025-01-16T10:00:00Z",
+      "updatedAt": "2025-01-28T15:00:00Z"
+    },
+    {
+      "id": "task-2",
+      "title": "Implement responsive navigation",
+      "description": "Build a responsive navigation component with mobile hamburger menu and dropdown menus",
+      "status": "in-progress",
+      "priority": "high",
+      "assigneeId": "user-2",
+      "projectId": "proj-1",
+      "dueDate": "2025-02-15T00:00:00Z",
+      "tags": ["frontend", "responsive"],
+      "createdAt": "2025-01-20T09:00:00Z",
+      "updatedAt": "2025-02-01T11:00:00Z"
+    },
+    {
+      "id": "task-3",
+      "title": "Set up CI/CD pipeline",
+      "description": "Configure GitHub Actions for automated testing, linting, and deployment to staging",
+      "status": "todo",
+      "priority": "medium",
+      "assigneeId": "user-2",
+      "projectId": "proj-1",
+      "dueDate": "2025-02-20T00:00:00Z",
+      "tags": ["devops"],
+      "createdAt": "2025-01-22T14:00:00Z",
+      "updatedAt": "2025-01-22T14:00:00Z"
+    },
+    {
+      "id": "task-4",
+      "title": "User authentication flow",
+      "description": "Implement login, registration, and password reset screens with form validation",
+      "status": "in-progress",
+      "priority": "critical",
+      "assigneeId": "user-2",
+      "projectId": "proj-2",
+      "dueDate": "2025-02-12T00:00:00Z",
+      "tags": ["auth", "frontend"],
+      "createdAt": "2025-01-21T08:00:00Z",
+      "updatedAt": "2025-02-03T10:00:00Z"
+    },
+    {
+      "id": "task-5",
+      "title": "Design app icon and splash screen",
+      "description": "Create app icon variants for iOS and Android, plus splash screen animation",
+      "status": "review",
+      "priority": "low",
+      "assigneeId": "user-3",
+      "projectId": "proj-2",
+      "dueDate": "2025-02-08T00:00:00Z",
+      "tags": ["design", "mobile"],
+      "createdAt": "2025-01-25T11:00:00Z",
+      "updatedAt": "2025-02-05T09:00:00Z"
+    },
+    {
+      "id": "task-6",
+      "title": "Integrate payment gateway",
+      "description": "Set up Stripe integration for processing payments with webhook support",
+      "status": "todo",
+      "priority": "critical",
+      "assigneeId": "user-2",
+      "projectId": "proj-3",
+      "dueDate": "2025-02-18T00:00:00Z",
+      "tags": ["backend", "api"],
+      "createdAt": "2025-02-02T09:00:00Z",
+      "updatedAt": "2025-02-02T09:00:00Z"
+    },
+    {
+      "id": "task-7",
+      "title": "Write API documentation",
+      "description": "Document all API endpoints with request/response examples using OpenAPI spec",
+      "status": "todo",
+      "priority": "medium",
+      "assigneeId": "user-3",
+      "projectId": "proj-3",
+      "dueDate": "2025-02-25T00:00:00Z",
+      "tags": ["docs"],
+      "createdAt": "2025-02-03T14:00:00Z",
+      "updatedAt": "2025-02-03T14:00:00Z"
+    },
+    {
+      "id": "task-8",
+      "title": "Performance optimization",
+      "description": "Optimize image loading, implement lazy loading for heavy components, and reduce bundle size",
+      "status": "todo",
+      "priority": "medium",
+      "assigneeId": "user-2",
+      "projectId": "proj-1",
+      "dueDate": "2025-02-28T00:00:00Z",
+      "tags": ["performance", "frontend"],
+      "createdAt": "2025-02-04T10:00:00Z",
+      "updatedAt": "2025-02-04T10:00:00Z"
+    },
+    {
+      "id": "task-9",
+      "title": "Setup analytics dashboard",
+      "description": "Integrate analytics SDK and create a dashboard for tracking user engagement events",
+      "status": "in-progress",
+      "priority": "high",
+      "assigneeId": "user-1",
+      "projectId": "proj-3",
+      "dueDate": "2025-02-22T00:00:00Z",
+      "tags": ["analytics", "frontend"],
+      "createdAt": "2025-02-01T12:00:00Z",
+      "updatedAt": "2025-02-06T15:00:00Z"
+    },
+    {
+      "id": "task-10",
+      "title": "Mobile push notifications",
+      "description": "Implement push notification system for task reminders and real-time updates",
+      "status": "todo",
+      "priority": "low",
+      "assigneeId": "user-2",
+      "projectId": "proj-2",
+      "dueDate": "2025-03-01T00:00:00Z",
+      "tags": ["mobile", "notifications"],
+      "createdAt": "2025-02-05T08:00:00Z",
+      "updatedAt": "2025-02-05T08:00:00Z"
+    }
+  ]
+}

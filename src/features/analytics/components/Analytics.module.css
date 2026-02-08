@@ -1,0 +1,43 @@
+.analytics { max-width: 1000px; }
+.loading { padding: var(--space-xl); text-align: center; color: var(--color-text-secondary); }
+
+.overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-md); margin: var(--space-xl) 0; }
+.card { background: var(--color-surface); padding: var(--space-lg); border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm); text-align: center; display: flex; flex-direction: column; gap: var(--space-xs); }
+.cardValue { font-size: 2rem; font-weight: 700; color: var(--color-primary); }
+.cardLabel { font-size: 0.8125rem; color: var(--color-text-secondary); }
+
+.chartsRow { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); margin-bottom: var(--space-md); }
+@media (max-width: 768px) { .chartsRow { grid-template-columns: 1fr; } }
+
+.chartCard { background: var(--color-surface); padding: var(--space-lg); border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm); margin-bottom: var(--space-md); }
+.chartCard h3 { margin-bottom: var(--space-md); font-size: 1rem; }
+
+.barChart { display: flex; flex-direction: column; gap: var(--space-sm); }
+.barRow { display: grid; grid-template-columns: 90px 1fr 40px; align-items: center; gap: var(--space-sm); }
+.barLabel { font-size: 0.8125rem; color: var(--color-text-secondary); text-transform: capitalize; }
+.barTrack { height: 20px; background: var(--color-bg); border-radius: 999px; overflow: hidden; }
+.barFill { height: 100%; border-radius: 999px; transition: width 0.6s ease; min-width: 2px; }
+.barValue { font-size: 0.8125rem; font-weight: 600; color: var(--color-text); text-align: right; }
+
+/* Bar fill colors by status */
+.todo { background: #94a3b8; }
+.in-progress { background: var(--color-primary); }
+.review { background: var(--color-warning); }
+.done { background: var(--color-success); }
+/* Bar fill colors by priority */
+.low { background: #93c5fd; }
+.medium { background: var(--color-warning); }
+.high { background: #fb923c; }
+.critical { background: var(--color-critical); }
+
+.table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.table th { text-align: left; padding: var(--space-sm) var(--space-md); border-bottom: 2px solid var(--color-border);
+  font-weight: 600; color: var(--color-text-secondary); font-size: 0.8125rem; }
+.table td { padding: var(--space-sm) var(--space-md); border-bottom: 1px solid var(--color-border); }
+
+.progressWrap { display: flex; align-items: center; gap: var(--space-sm); }
+.progressTrack { flex: 1; height: 8px; background: var(--color-bg); border-radius: 999px; overflow: hidden; }
+.progressFill { height: 100%; background: var(--color-success); border-radius: 999px; transition: width 0.6s ease; }
+.progressLabel { font-size: 0.8125rem; font-weight: 600; min-width: 36px; text-align: right; }
